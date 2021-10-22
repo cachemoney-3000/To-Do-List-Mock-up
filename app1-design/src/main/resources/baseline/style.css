@@ -87,6 +87,19 @@
 }
 
 
+.button3 {
+    -fx-background-color:  #29292a;
+}
+
+.button3:hover {
+    -fx-background-color:  #6a6d6e;
+}
+
+.button3:pressed {
+    -fx-background-color:  #6a6d6e;
+}
+
+
 .textArea {
     -fx-background-color: #282829;
     -fx-text-fill: #f7f7f7;

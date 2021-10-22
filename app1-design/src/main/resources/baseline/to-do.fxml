@@ -122,9 +122,9 @@
                         <Insets left="10.0" top="15.0" />
                      </HBox.margin>
                   </TextField>
-                  <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onMouseClicked="#removeList" opacity="0.8" styleClass="button2" stylesheets="@style.css">
+                  <Button accessibleRole="DATE_PICKER" contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onMouseClicked="#removeList" opacity="0.8" styleClass="button3" stylesheets="@style.css">
                      <graphic>
-                        <ImageView fx:id="removeList" fitHeight="26.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="removeList" accessibleRole="BUTTON" fitHeight="26.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@icons/noun_Remove_1890860.png" />
                            </image>
@@ -216,7 +216,7 @@
                                     <Insets />
                                  </opaqueInsets>
                               </TextField>
-                              <Button mnemonicParsing="false" onMouseClicked="#pickDate" styleClass="button2" stylesheets="@style.css">
+                              <Button mnemonicParsing="false" onMouseClicked="#pickDate" styleClass="button3" stylesheets="@style.css">
                                  <graphic>
                                     <ImageView fx:id="dueDate" fitHeight="31.0" fitWidth="36.0" opacity="0.79" pickOnBounds="true" preserveRatio="true">
                                        <image>
