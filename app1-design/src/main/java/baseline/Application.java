@@ -1,3 +1,7 @@
+/*
+* UCF COP3330 Fall 2021 Application Assignment 1 Solution
+* Copyright 2021 Joshua Samontanez
+ */
 package baseline;
 
 import javafx.fxml.FXMLLoader;
@@ -12,7 +16,7 @@ public class Application extends javafx.application.Application {
             FXMLLoader fxmlLoader = new FXMLLoader(Application.class.getResource("to-do.fxml"));
             Scene scene = new Scene(fxmlLoader.load(), 800, 500);
             stage.setResizable(false);
-            
+
             stage.setTitle("To-Do");
             stage.setScene(scene);
             stage.setResizable(false);
