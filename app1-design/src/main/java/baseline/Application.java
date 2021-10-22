@@ -13,13 +13,16 @@ public class Application extends javafx.application.Application {
     @Override
     public void start(Stage stage) {
         try{
+            // load the fxml file
             FXMLLoader fxmlLoader = new FXMLLoader(Application.class.getResource("to-do.fxml"));
-            Scene scene = new Scene(fxmlLoader.load(), 800, 500);
+            // create a new scene
+            Scene scene = new Scene(fxmlLoader.load());
+            // the window cannot be resized
             stage.setResizable(false);
 
+            // title of the application
             stage.setTitle("To-Do");
             stage.setScene(scene);
-            stage.setResizable(false);
             stage.show();
 
 
