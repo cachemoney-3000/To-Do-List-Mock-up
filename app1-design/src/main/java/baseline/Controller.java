@@ -2,51 +2,66 @@ package baseline;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
-import javafx.scene.control.DatePicker;
-import javafx.scene.control.ListView;
-import javafx.scene.control.TextArea;
+import javafx.scene.control.CheckBox;
+import javafx.scene.control.Label;
+import javafx.scene.control.MenuItem;
 import javafx.scene.control.TextField;
-import javafx.scene.text.Text;
+import javafx.scene.image.ImageView;
 
 public class Controller {
 
     @FXML
-    private TextArea addTask;
+    private TextField addNote;
 
     @FXML
-    private ListView<?> checkBox;
+    private CheckBox checkBox;
 
     @FXML
-    private DatePicker datePicker;
+    private ImageView dateChange;
 
     @FXML
-    private Button deleteList;
+    private ImageView dueDate;
 
     @FXML
-    private Button enter;
+    private TextField itemDesc;
 
     @FXML
-    private Button important;
+    private TextField listTitle;
 
     @FXML
-    private Button newList;
+    private MenuItem menuClose;
 
     @FXML
-    private Button search;
+    private MenuItem menuLoad;
 
     @FXML
-    private TextField searchField;
+    private MenuItem menuSave;
 
     @FXML
-    private Text taskDate;
+    private ImageView removeItem;
 
     @FXML
-    private TextField taskName;
+    private ImageView removeList;
 
     @FXML
-    private Button today;
+    private TextField search;
 
     @FXML
-    private Button upcoming;
+    private Label showDate;
+
+    @FXML
+    private Button tabCompleted;
+
+    @FXML
+    private Button tabIncomplete;
+
+    @FXML
+    private Button tabNew;
+
+    @FXML
+    private Button tabToday;
+
+    @FXML
+    private Button tabUpcoming;
 
 }

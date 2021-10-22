@@ -4,16 +4,24 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-import java.io.IOException;
 
 public class Application extends javafx.application.Application {
     @Override
-    public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(Application.class.getResource("to-do.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 800, 500);
-        stage.setTitle("To-Do");
-        stage.setScene(scene);
-        stage.show();
+    public void start(Stage stage) {
+        try{
+            FXMLLoader fxmlLoader = new FXMLLoader(Application.class.getResource("to-do.fxml"));
+            Scene scene = new Scene(fxmlLoader.load(), 800, 500);
+            stage.setResizable(false);
+            
+            stage.setTitle("To-Do");
+            stage.setScene(scene);
+            stage.setResizable(false);
+            stage.show();
+
+
+        }catch (Exception e){
+            e.printStackTrace();
+        }
     }
 
     public static void main(String[] args) {
