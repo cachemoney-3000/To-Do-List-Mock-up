@@ -51,9 +51,6 @@ public class Controller {
     private ImageView removeList;
 
     @FXML
-    private TextField search;
-
-    @FXML
     private Label showDate;
 
     @FXML
@@ -67,9 +64,6 @@ public class Controller {
 
     @FXML
     private Button tabToday;
-
-    @FXML
-    private Button tabUpcoming;
 
     public void save(ActionEvent actionEvent) {
         // save the listed items in the notes
@@ -87,23 +81,10 @@ public class Controller {
         System.out.println("exited");
     }
 
-    public void searchTask(KeyEvent keyEvent) {
-        // perform search
-        // compare characters from the key that is entered in the search bar
-        // to the characters that are listed on the list
-        System.out.println("searching....");
-    }
-
     public void today(MouseEvent mouseEvent) {
         // clicked the today's tab
         // will show the list on today's tab
         System.out.println("today's tab is clicked");
-    }
-
-    public void upcoming(MouseEvent mouseEvent) {
-        // clicked the upcoming tab
-        // will show the list on the upcoming tab
-        System.out.println("upcoming tab is clicked");
     }
 
     public void completed(MouseEvent mouseEvent) {
