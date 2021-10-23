@@ -76,11 +76,6 @@ public class Controller {
         System.out.println("file is loaded");
     }
 
-    public void close(ActionEvent actionEvent) {
-        // method that will exit the application
-        System.out.println("exited");
-    }
-
     public void today(MouseEvent mouseEvent) {
         // clicked the today's tab
         // will show the list on today's tab
@@ -103,12 +98,14 @@ public class Controller {
         // will add a new list
         // prompt user to enter a name for the list
         // the new created list will show up in the sidebar
+        // the title should be at least 3 characters
         System.out.println("list added");
     }
 
     public void changeTitle(KeyEvent keyEvent) {
         // will change the title of a list that was created by the user
         // when entered, the new title will display
+        // the title should be at least 3 characters when edited
         System.out.println("title changed");
     }
 
@@ -120,12 +117,14 @@ public class Controller {
     public void editText(KeyEvent keyEvent) {
         // will edit the text inside an item
         // when entered, it will show the new text
+        // the title should be at least 3 character when long
         System.out.println("text edited");
     }
 
     public void changeDate(MouseEvent mouseEvent) {
         // a date picker will prompt when clicked
         // store the new date, and display it in (MMMM-YY-DD) format
+        // will be shown on the label
         System.out.println("date changed");
     }
 
@@ -137,8 +136,10 @@ public class Controller {
     public void addItem(KeyEvent keyEvent) {
         // will add am item in the list
         // picking a due date is not mandatory
-            //if no due date, the label will show blank
+        // if no due date, the label will show blank
         // when entered it will show the description and due date
+        // the new item should be added on the vbox
+        // the description should be at least 3 characters long
         System.out.println("new item added");
     }
 

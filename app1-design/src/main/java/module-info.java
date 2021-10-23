@@ -6,6 +6,8 @@ module com.application {
     requires com.dlsc.formsfx;
     requires org.kordamp.bootstrapfx.core;
     requires javafx.graphics;
+    requires junit;
+    requires org.junit.jupiter.api;
 
     opens baseline to javafx.fxml;
     exports baseline;
